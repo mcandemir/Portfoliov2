@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon/favicon-32x32.png')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/aboutme.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/experiences.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/mywork.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/resume.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/lightbox.css')}}" />
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+  <title>mcandemir</title>
+</head>
+
+
+
+<body>
+  <!-- ================================================================================== -->
+
+
+
+  <!-- Showcase & Nav -->
+  <div id="showcase">
+    <header>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li class="hide-on-small">
+            <a href="#showcase">mcandemir</a>
+          </li>
+          <li>
+            <a href='#mywork'>Projects</a>
+          </li>
+          <li>
+            <a href='#aboutme'>About Me</a>
+          </li>
+          <li>
+            <a href='#experience'>Resume</a>
+          </li>
+          <li>
+            <a href='#resume'> Contact Me</a>
+          </li>
+        </ul>
+        <a href='#' id='openup'>mcandemir</a>
+      </nav>
+    </header>
+    <div class="section-main container">
+      <h3>Hi there! I'm</h3>
+      <h1>CAN DEMIR</h1>
+      <!-- <h3>I'm a</h3> -->
+      <p>Data Scientist | Python Developer | ML Engineer</p>
+      <br>
+      <hr>
+      <br>
+
+      <div class="home__social">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/mehmet-can-demir" target="_blank" class="home__social-link">
+              <i class='bx bxl-linkedin-square' ></i>
+            </a>
+            <a href="https://github.com/mcandemir" target="_blank" class="home__social-link">
+              <i class='bx bxl-github'></i>                            
+            </a>
+            <a href="https://medium.com/@mhmtcndmr01" target="_blank" class="home__social-link">
+              <i class='bx bxl-medium-square' ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- ================================================================================== -->
+
+
+
+<!-- My Work Section -->
+<section id="mywork" class="section">
+  <div class="project-heading">
+    <h3><a href="#mywork" class="custom-underline">Projects</a></h3>
+    <hr>
+  </div>
+
+  <!-- filter -->
+  <ul class="project-filter">
+    <li class="list project-filter-active" data-filter="all">All</li>
+    <li class="list" data-filter="datascience">Data Science</li>
+    <li class="list" data-filter="ai">AI App</li>
+    <li class="list" data-filter="backend">Backend</li>
+    <!-- <li class="list" data-filter="flutter">Flutter App</li> -->
+    <li class="list" data-filter="cli">CLI Application</li>
+    
+  </ul>
+
+  <br>
+
+  <!-- container -->
+  <div class="project-container">
+
+    <!-- meals -->
+    <!-- <div class="project-box flutter">
+      <a href="/img/projects/meals.png" data-lightbox="flutter">
+        <img src="/img/projects/meals.png" alt="multi-theme-calculator">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/my-flutter-apps/tree/master/meals" target="_blank">Meals</a></h3>
+        <p>A meal recipe guide application.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Dart / Flutter
+              </p>
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/my-flutter-apps/tree/master/meals" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- multi-theme-calculator -->
+    <!-- <div class="project-box flutter">
+      <a href="/img/projects/multi_theme_calculator.png" data-lightbox="flutter">
+        <img src="/img/projects/multi_theme_calculator.png" alt="multi-theme-calculator">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/my-flutter-apps/tree/master/calculator" target="_blank">Multi-Theme Calculator</a></h3>
+        <p>Calculator with multiple themes.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Dart / Flutter
+              </p>
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/my-flutter-apps/tree/master/calculator" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- doc-assistant -->
+    <div class="project-box ai">
+      <a href="{{url_for('static', filename='img/projects/doc_assistant.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/doc_assistant.png')}}" alt="imdb-sentiment-analysis">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/doc-assistant" target="_blank">DocAssistant</a></h3>
+        <p>RAG based document-querier Artificial Intelligence application powered by LLMs where users can load their documents and ask questions.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Python / LLM Streamlit (2024)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/doc-assistant" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- streamlitpt -->
+    <div class="project-box cli">
+      <a href="{{url_for('static', filename='img/projects/streamlitpt.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/streamlitpt.png')}}" alt="imdb-sentiment-analysis">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/streamlit-project-template" target="_blank">Streamlit Project Template</a></h3>
+        <p>A streamlit project template to create cleaner code and cost-efficient maintainable apps.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Python / Streamlit (2024)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/streamlit-project-template" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- adgen -->
+    <div class="project-box ai">
+      <a href="{{url_for('static', filename='img/projects/adgen.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/adgen.png')}}" alt="ad-gen-generative-advertising">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/ad-gen-generative-advertising" target="_blank">AdGen Generative Advertising</a></h3>
+        <p>Generating Ad templates using Generative AI</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Python / StableDiffusion / FastAPI (2024)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/ad-gen-generative-advertising" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- studybud -->
+    <div class="project-box backend">
+      <a href="{{url_for('static', filename='img/projects/studybud.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/studybud.png')}}" alt="studybud">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/studybud" target="_blank">StudyBud</a></h3>
+        <p>An intermediate-level conversation room project. </p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Python / Django (2024)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/studybud" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- imdb-sentiment-analysis -->
+    <div class="project-box datascience">
+      <a href="{{url_for('static', filename='img/projects/imdb-sentiment-analysis.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/imdb-sentiment-analysis.png')}}" alt="imdb-sentiment-analysis">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/imdb-sentiment-analysis" target="_blank">IMDB Sentiment Analysis</a></h3>
+        <p>Performing sentimental analysis on 50K IMDB movies review data.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Data Science / SentimentAnalysis (2023)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/imdb-sentiment-analysis" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+            <li>
+              <a href="https://www.kaggle.com/code/mehmetcandemir/imdb-sentiment-analysis-eda-tf-idf-90" target="_blank"><i class="fa-brands fa-kaggle fa-xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- forecast-bus-demand -->
+    <div class="project-box datascience">
+      <a href="{{url_for('static', filename='img/projects/bus_forecast.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/bus_forecast.png')}}" alt="bus_forecast">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/forecast-bus-demand" target="_blank">Forecast Bus Demand</a></h3>
+        <p>Forecasting the demand of buses for 10 municipalities.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Data Science / Python TimeSeries (2022)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/forecast-bus-demand" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ames-house-prices -->
+    <div class="project-box datascience">
+      <a href="{{url_for('static', filename='img/projects/ames_house_prices.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/ames_house_prices.png')}}" alt="ames-house-prices">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/ames-house-prices" target="_blank">Ames House Prices</a></h3>
+        <p>Predicting house prices via Ames Housing dataset using advanced regression techniques.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Data Science / Python Regression (2022)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/ames-house-prices" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+            <li>
+              <a href="https://www.kaggle.com/code/mehmetcandemir/a-study-on-ames-housing-dataset-int-advanced" target="_blank"><i class="fa-brands fa-kaggle fa-xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- us-wildfire-analysis -->
+    <div class="project-box datascience">
+      <a href="{{url_for('static', filename='img/projects/us_wildfire_analysis.png')}}" data-lightbox="datascience">
+        <img src="{{url_for('static', filename='img/projects/us_wildfire_analysis.png')}}" alt="us-wildfire-analysis">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/us-wildfire-analysis" target="_blank">U.S. Wildfire Analysis</a></h3>
+        <p>Providing varying insights about the wildfires in U.S. such as cause and geographical location.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                Data Science / Python EDA (2022)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/us-wildfire-analysis" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+            <li>
+              <a href="https://www.kaggle.com/code/mehmetcandemir/us-wildfire-analysis-eda-and-answers" target="_blank"><i class="fa-brands fa-kaggle fa-xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- wgan-gp-trainer -->
+    <div class="project-box ai">
+      <a href="{{url_for('static', filename='img/projects/wgangp.jpeg')}}" data-lightbox="wgangp">
+        <img src="{{url_for('static', filename='img/projects/wgangp.jpeg')}}" alt="wgangp">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/wgan-gp-trainer" target="_blank">WGAN-GP Trainer</a></h3>
+        <p>A minimized, customizable GAN trainer built with PyTorch. Also it is cross-platform, you can run it on Windows too.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                AI / Python PyTorch (2022)
+              </p>
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/wgan-gp-trainer" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- grnn -->
+    <div class="project-box ai">
+      <a href="{{url_for('static', filename='img/projects/grnn.png')}}" data-lightbox="grnn">
+        <img src="{{url_for('static', filename='img/projects/grnn.png')}}" alt="grnn">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/general-regression-neural-networks" target="_blank">GRNN</a></h3>
+        <p>General Regression Neural Network built by scratch. It is one of the most primitive models. I'm planning to fix the bugs soon..</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                AI / Python Tkinter Sklearn (2020)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/general-regression-neural-networks" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    
+    <!-- content-based-filtering -->
+    <div class="project-box ai">
+      <a href="{{url_for('static', filename='img/projects/cbf_recommender.png')}}" data-lightbox="cbf-recommender">
+        <img src="{{url_for('static', filename='img/projects/cbf_recommender.png')}}" alt="cbf-recommender">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/content-based-filtering" target="_blank">CBF Recommender</a></h3>
+        <p>A content-based movie recommender which uses cosine similarity to find similar movies. You can also add users with favorite movies.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                AI / Python Tkinter (2020)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/content-based-filtering" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- fenestration-cli -->
+    <div class="project-box cli">
+      <a href="{{url_for('static', filename='img/projects/fenestration.png')}}" data-lightbox="grnn">
+        <img src="{{url_for('static', filename='img/projects/fenestration.png')}}" alt="fenestration">
+      </a>
+      <div class="project-description">
+        <h3><a href="https://github.com/mcandemir/fenestration-cli" target="_blank">Fenestration CLI</a></h3>
+        <p>A terminal application I built to store buildings' window components data. Both imperial and SI measurements are accepted.</p>
+        <br>
+        <div class="project-footer">
+          <ul>
+            <li>
+              <p>
+                CLI App / Python SQL (2019)
+              </p>  
+            </li>
+            <li>
+              <a href="https://github.com/mcandemir/fenestration-cli" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================================================================================== -->
+
+
+
+    <!-- About Me Section -->
+    <section id="aboutme" class="section bg-light">
+      
+      <div class="container-aboutme">
+        <!-- image and texts -->
+        <ul>
+          <li>
+            <div class="image-working">
+              <img src="{{url_for('static', filename='img/bg/working-at-home.jpg')}}" alt="Covid prevention vector created by freepik - www.freepik.com">
+            </div>
+          </li>
+          <li>
+            <div class="aboutme-introduction">
+              <h3 class="aboutme-introduction-title">Hey there!</h3>
+              <p class="aboutme-lead">I'm a Data Scientist 
+                who pursues his career in <b>Data Science</b> and related fields. In 4 years of 
+                my coding life, I've worked on various projects and worked with different 
+                teams using <b>Python</b>. As an open-source enthusiast, I've been using <b>Linux</b> for few years, and 
+                I use <b>Git</b> as a version control system and I like to automatize boring stuff with <b>Shell Scripting</b>.
+              </p>
+              <br>
+              <p class="aboutme-lead">I started with computer vision, using <b>OpenCV</b>, 
+                then I headed to data science and learned <b>Pandas</b>, <b>Numpy</b>, 
+                <b>Matplotlib</b> and <b>Scikitlearn</b>. Then I begun diving into AI and
+                learned <b>TensorFlow</b>. After building various object detection and such
+                estimators using <b>Keras API</b>, I worked with more advanced topics like GANs
+                and built a minimized GAN trainer using <b>PyTorch</b>. I also have work experience on 
+                <b>AWS</b> and <b>Azure</b>. Finally I built <b>LLM</b> systems using <b>RAG</b> and created ETL pipelines on <b>Apache Airflow</b>.</p>
+              <br>
+              <p class="aboutme-lead">As the backend, I used <b>Django</b> as the web developing framework,
+                and to manage API calls in different scenarios, I used <b>DRF</b>, <b>Flask</b> and <b>FastAPI.</b> To 
+                deploy the apps, I used <b>Docker</b> as a containerization software and <b>GithubActions</b> to keep the CI/CD cycle.
+              </p>
+              <br>
+              <p class="aboutme-lead"></a></p>
+            </div>
+          </li>
+        </ul>
+
+        <div class='text-center' style = "margin-top:1%; margin-bottom:2%">
+            <h2 class="page-header text-center"></h2>
+                <ul class="press">
+                  <li>
+                    <div class="press-logo">
+                      <img alt="One" src="{{url_for('static', filename='img/logos/html.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Two" src="{{url_for('static', filename='img/logos/css.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Three" src="{{url_for('static', filename='img/logos/javascript.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/c.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/cpp.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/java.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/sql.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/python.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/keras.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/tensorflow.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/pytorch.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/scikitlearn.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/pandas.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/numpy.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/html.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/opencv.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/git.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/kubernetes.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/docker.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/vscode.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/pycharm.png')}}" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="press-logo">
+                      <img alt="Four" src="{{url_for('static', filename='img/logos/jupyter.png')}}" />
+                    </div>
+                  </li>
+                </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- ================================================================================== -->
+
+
+<section id="experience">
+
+  <div id="content">
+    <h1 class="exp-header">Work Experience</h1>
+  
+    <ul class="timeline">
+      <li class="event" data-date="">
+        <h3>Data Scientist • Dogus Technology</h3>
+      </li>
+      <li class="event" data-date="">
+        <h3>Data Science Intern • Jotform</h3>
+        <!-- <p>Jotform</p>     -->
+      </li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <h1 class="exp-header">Education</h1>
+  
+    <ul class="timeline">
+      <li class="event" data-date="">
+        <h3>Cukurova University • Bachelor of Engineering</h3>
+        <!-- <p>Cumputer Engineering</p>     -->
+      </li>
+    </ul>
+  </div>
+  
+
+</section>
+
+
+
+<!-- ================================================================================== -->
+
+
+<section id="resume" class="section">
+  <div class="container resume-pdf">
+    <h2>Interested in what I do? Contact me!</h2>
+    <br>
+    <h2>mhmtcndmr01@gmail.com</h2>
+    <br>
+
+    <!-- <h3><a href="resume/Mehmet_Can_Demir_CV.pdf" target="_blank">Full Resume & Contact Information.</a></h3> -->
+  </div>
+</section>
+
+<!-- 
+  resume Section
+  <section id="resume" class="section">
+    <div class="container resume-pdf">
+      <h3><a href="resume/Mehmet_Can_Demir_CV.pdf" target="_blank">Full Resume & Contact Information.</a></h3>
+    </div>
+  </section> -->
+
+
+
+<!-- ================================================================================== -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom text-center">
+      Copyright &copy; Mehmet Can Demir
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="{{url_for('static', filename='/js/main.js')}}"></script>
+  <script src="{{url_for('static', filename='/js/projects.js')}}"></script>
+  <script src="{{url_for('static', filename='/js/lightbox.js')}}"></script>
+  <script src="https://kit.fontawesome.com/43024adfba.js" crossorigin="anonymous"></script>
+</body>
+</html>
