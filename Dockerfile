@@ -7,5 +7,4 @@ COPY app/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 8888 
 COPY ./app .
-# CMD ["python", "-m", "gunicorn", "--bind", "0.0.0.0:8888", "app:app"]
 CMD ["python", "-m", "flask", "run", "--host", "0.0.0.0", "--port", "8888", "--debug"]
